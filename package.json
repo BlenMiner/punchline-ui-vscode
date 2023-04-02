@@ -1,0 +1,28 @@
+{
+  "name": "punchline-ui",
+  "displayName": "Punchline UI",
+  "description": "Punch language support for the Punchline UI framework.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "scripts": {
+    "vsce": "vsce package"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "punch",
+      "aliases": ["punch", "punch"],
+      "extensions": ["punch"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "punch",
+      "scopeName": "source.punch",
+      "path": "./syntaxes/punch.tmLanguage.json"
+    }]
+  }
+}
